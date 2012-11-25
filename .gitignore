@@ -1,1 +1,5 @@
 #Add stuff to be ignored here. It can ignore folders as : folder/*
+#http://gitready.com/beginner/2009/01/19/ignoring-files.html
+
+#Ignore the user_guide folder, with all its sub-folders and files.
+user_guide/**/*
