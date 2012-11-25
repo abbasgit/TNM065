@@ -5,3 +5,6 @@
 # Ignore the user_guide folder, with all its sub-folders and files.
 user_guide/
 user_guide/**/*
+
+# Ignore .DS_Store (APPLEBAJS!)
+.DS_Store
