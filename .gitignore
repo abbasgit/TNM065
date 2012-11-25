@@ -2,12 +2,10 @@
 # http://gitready.com/beginner/2009/01/19/ignoring-files.html
 # https://help.github.com/articles/ignoring-files
 
-# Ignore system folder 
+# Ignore folders from the CodeIgniter library
+application/
 system/
-
-# Ignore the user_guide folder, with all its sub-folders and files.
 user_guide/
-user_guide/**/*
 
 # Ignore .DS_Store (APPLEBAJS!)
 .DS_Store
