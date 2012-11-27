@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.student.itn.liu.se/~frelo490/tnm065/projekt/CodeIgniter/Test/CodeIgniter_2.1.3/';
+$config['base_url']	= 'http://www.student.itn.liu.se/~frelo490/tnm065/projekt/';
 
 /*
 |--------------------------------------------------------------------------
