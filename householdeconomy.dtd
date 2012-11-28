@@ -1,0 +1,51 @@
+<!-- Encoding entities -->
+
+<!-- å,ä,ö -->
+   
+   <!ENTITY å "#229">
+   <!ENTITY Å "#197">
+   <!ENTITY aring "#229">
+
+   <!ENTITY ä "#228">
+   <!ENTITY Ä "#196">
+   <!ENTITY auml "#228">
+   <!ENTITY Auml "#196">
+
+   <!ENTITY ouml "#246">
+   <!ENTITY Ouml "#214">
+   <!ENTITY ö "#246">
+   <!ENTITY Ö "#214">
+   
+<!--====== Others ===========-->    
+
+   <!ENTITY brkbar "#166">
+   <!ENTITY ccedil "#231">
+
+<!--==== Element entities ====-->
+
+<!ENTITY % Categories "( accommodation | vehicle | groceries | revenue | communication | entertainment | other)" >
+
+<!--======== Root Elements ==========-->
+
+<!ELEMENT householdeconomy (user, household*)>
+
+<!ELEMENT household (name, report*)>
+
+<!ELEMENT report (user, date, price, product, category) >
+
+<!--======= Sub-Root Elements =========-->
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT user (#PCDATA)>
+
+<!ELEMENT date (#PCDATA)>
+
+<!ELEMENT price (#PCDATA)>
+
+<!ELEMENT product (#PCDATA)>
+
+<!ELEMENT category EMPTY>
+<!ATTLIST category
+    type    %Categories;    #REQUIRED
+>
