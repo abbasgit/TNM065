@@ -3,9 +3,9 @@
     function index()
     {
       $this->load->model('reports_model');
-      $data['result'] = $this->reports_model->getData($reports);
+      $data['result'] = $this->reports_model->getData();
       $data['page_title'] = "Money in the bank";
-      $this->load->view('reports_view',$data);
+      $this->load->view('reports_view', $data);
       }
   }
 ?>

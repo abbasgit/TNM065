@@ -4,9 +4,14 @@
 	</head>
 	<body>
 		<?php foreach($result as $row):?>
-		<h3><?=$row->title?></h3>
-		<p><?=$row->text?></p>
-		<br />
+		<h1><?=$row->report_id?> </h1>
+		<p><?=$row->household_id?> 
+		<p><?=$row->user_id?> 
+		<p><?=$row->price?> 
+		<p><?=$row->product?> 
+		<p><?=$row->category?> 
+		<p><?=$row->date?></p>
+		</br>
 		<?php endforeach;?>
 	</body>
 </html>
