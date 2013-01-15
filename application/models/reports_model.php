@@ -14,4 +14,6 @@ class Reports_model extends CI_Model {
             return $query->result();  
         }  
 }  
-?>  
+
+/* End of file login.php */
+/* Location: ./application/models/reports_model.php */

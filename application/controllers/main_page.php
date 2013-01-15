@@ -1,10 +1,10 @@
+
 <?php
 class Main_page extends CI_Controller {
 	
 	public function index()
 	{
-
-		if ($this->_is_logged_in() === FALSE)
+		if ( ! $this->_is_logged_in() )
 		{
 			redirect('login', 'refresh');
 		}
@@ -21,7 +21,7 @@ class Main_page extends CI_Controller {
 
 	private function _is_logged_in()
 	{
-		if ($this->session->userdata('logindata') === FALSE)
+		if ($this->session->userdata('username') === FALSE)
 		{
 			return FALSE;
 		}
@@ -37,7 +37,7 @@ class Main_page extends CI_Controller {
 		//Clears the current session.
 		$this->session->sess_destroy();
 
-		redirect('home_controller', 'refresh');
+		redirect('main_page', 'refresh');
 	}
 }
 
