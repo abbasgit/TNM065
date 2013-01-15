@@ -4,9 +4,6 @@ class Main_page extends CI_Controller {
 	public function index()
 	{
 
-		$this->_load_main_view();
-		
-		/*
 		if ($this->_is_logged_in() === FALSE)
 		{
 			redirect('login', 'refresh');
@@ -15,7 +12,6 @@ class Main_page extends CI_Controller {
 		{
 			$this->_load_main_view();
 		}
-		*/
 	}
 
 	private function _load_main_view()
