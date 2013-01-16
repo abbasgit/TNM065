@@ -62,7 +62,7 @@ class Login extends CI_Controller {
 			return TRUE;
 		}
 		
-		$this->form_validation->set_message('check_password', 'Incorrect password' . md5($password) . 'for user : ' . $username);
+		$this->form_validation->set_message('check_password', 'Incorrect password');
 		return FALSE;
 	}
 
