@@ -52,16 +52,16 @@ class Login extends CI_Controller {
 		return FALSE;
 	}
 
-	public function callback_check_password($password)
+	public function check_password($password)
 	{
 		// Fetch the username 
 		$username = $this->input->post('username');
-		/*
+		
 		if ($this->validation->valid_password($username, $password))
 		{
 			return TRUE;
 		}
-		*/
+		
 		$this->form_validation->set_message('check_password', 'Incorrect password' . md5($password) . 'for user : ' . $username);
 		return FALSE;
 	}

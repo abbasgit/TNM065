@@ -31,15 +31,13 @@ class Validation extends CI_Model
 
 	public function valid_password($username, $password)
 	{
-		//$query = $this->db->get_where('USER', array('username' => $username, 'password' => md5($password)));
+		$query = $this->db->get_where('USER', array('username' => $username, 'password' => md5($password)));
 
-		$query = $this->db->get('SELECT username FROM USER WHERE username = "'. $username . '" AND password="' . $password . '"');
+		//$query = $this->db->get('SELECT username FROM USER WHERE username = "'. $username . '" AND password="' . $password . '"');
 
-		return FALSE;
-		
 		if ( $query->num_rows() === 1 )
 		{
-			return FALSE;
+			return TRUE;
 		}
 
 		return FALSE;
