@@ -1,0 +1,33 @@
+body 
+{
+	background-color : #DDD;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 12pt;
+	margin : auto auto;
+}
+
+form
+{
+	text-align: left;
+	width: 30%;
+	background-color: #EEE;
+	border: 1px solid gray;
+
+	padding: 12px;
+}
+
+label
+{
+	float: left;
+}
+
+#validation_errors
+{
+	width: 30%;
+	text-align: left;
+	background-color: #FBB;
+	padding : 12px;
+	border: 1px solid black;
+}
+

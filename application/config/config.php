@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://www.student.itn.liu.se/~frelo490/tnm065/projekt/';
 
 /*
 |--------------------------------------------------------------------------

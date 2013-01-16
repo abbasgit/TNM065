@@ -38,7 +38,7 @@ class Login extends CI_Controller {
 	private function _setup_form_validation()
 	{
 		$this->form_validation->set_rules('username', 'username', 'trim|required|alpha_numeric|callback_check_username');
-		$this->form_validation->set_rules('password', 'password', 'trim|required|alpha_numeric|callback_check_password');
+		$this->form_validation->set_rules('password', 'password', 'trim|required|callback_check_password');
 	}
 
 	public function check_username($username)
@@ -57,7 +57,7 @@ class Login extends CI_Controller {
 		// Fetch the username 
 		$username = $this->input->post('username');
 		
-		if ($this->validation->valid_password($username, $password))
+		if ($this->validation->valid_login($username, $password))
 		{
 			return TRUE;
 		}
