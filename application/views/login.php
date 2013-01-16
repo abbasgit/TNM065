@@ -5,18 +5,17 @@
 </head>
 <body>
 	<!--
-   	   <?php echo form_error('username'); ?>
-   	   <?php echo form_error('password'); ?>
+		<?php echo validation_errors('<div id="validation_errors">', '</div>'); ?>
 	-->
-
-	<?php echo validation_errors('<div id="validation_errors">', '</div>'); ?>
    
    	<?php echo form_open('login'); ?>
      
      <label for="username">Username:</label>
+     <?php echo form_error('username', '<span class="validation_error">', '</span>'); ?>
      <input type="text" size="12" id="username" value="<?php echo set_value('username'); ?>" name="username"/>
 
      <label for="password">Password:</label>
+     <?php echo form_error('password', '<span class="validation_error">', '</span>'); ?>
      <input type="password" size="12" id="password" name="password"/>
      
      <input type="submit" value="Login"/>

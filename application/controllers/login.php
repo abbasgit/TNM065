@@ -26,10 +26,9 @@ class Login extends CI_Controller {
 
 	private function _login_success()
 	{
-		// Write session data
+		// Write session data in order to gain access to the main page.
 		$logindata = array(
-			'username' => $this->input->post('username'),
-			'password' => $this->input->post('password')
+			'username' => $this->input->post('username')
 			);
 		$this->session->set_userdata($logindata);
 		redirect('main_page');
