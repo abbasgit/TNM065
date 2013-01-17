@@ -13,7 +13,10 @@ class Reports_model extends CI_Model {
             $query = $this->db->get('REPORT');
             return $query->result();  
         }  
-}  
 
-/* End of file login.php */
-/* Location: ./application/models/reports_model.php */
+ function insert_entry($data)
+    {            
+        $this->db->insert('REPORT', $data);
+     } 
+}
+?>
