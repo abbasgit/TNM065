@@ -20,15 +20,15 @@ class Login extends CI_Controller {
 		}
 		else
 		{
-			$this->_login_success();
+			$this->login_user($this->input->post('username'));
 		}
 	}
 
-	private function _login_success()
+	public function login_user($username)
 	{
 		// Write session data in order to gain access to the main page.
 		$logindata = array(
-			'username' => $this->input->post('username')
+			'username' => $username
 			);
 		$this->session->set_userdata($logindata);
 		redirect('main_page');

@@ -9,12 +9,12 @@
 	-->
 
     <div id="pageheader">
-      <p>Login</p>
+      <p>Register</p>
     </div>
 
     <?php
-      $attributes = array('id' => 'loginform');
-      echo form_open('login', $attributes); 
+      $attributes = array('id' => 'registerform');
+      echo form_open('register', $attributes); 
     ?>
 
      <label for="username">Username:</label>
@@ -24,13 +24,14 @@
      <label for="password">Password:</label>
      <input type="password" size="12" id="password" name="password"/>
      <?php echo form_error('password', '<span class="validation_error">', '</span>'); ?>
+
+     <label for="confpassword">Confirm password:</label>
+     <input type="password" size="12" id="confpassword" name="confpassword"/>
+     <?php echo form_error('confpassword', '<span class="validation_error">', '</span>'); ?>
      
      <br>
-     <input type="submit" value="Login"/>
+      <input type="submit" value="Register"/>
    	</form>
 
-	<div id="reglink">
-   		<p>New user? <a href="register">Register here!</a></p>
-   	</div>
 </body>
 </html>
