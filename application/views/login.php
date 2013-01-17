@@ -9,19 +9,21 @@
 	-->
    
    	<?php echo form_open('login'); ?>
-     
+
      <label for="username">Username:</label>
-     <?php echo form_error('username', '<span class="validation_error">', '</span>'); ?>
      <input type="text" size="12" id="username" value="<?php echo set_value('username'); ?>" name="username"/>
+     <?php echo form_error('username', '<span class="validation_error">', '</span>'); ?>
 
      <label for="password">Password:</label>
-     <?php echo form_error('password', '<span class="validation_error">', '</span>'); ?>
      <input type="password" size="12" id="password" name="password"/>
+     <?php echo form_error('password', '<span class="validation_error">', '</span>'); ?>
      
+     <br>
      <input type="submit" value="Login"/>
    	</form>
 
-   	<p>New user? <a href="register">Register here!</a></p>
-
+	<div id="reglink">
+   		<p>New user? <a href="register">Register here!</a></p>
+   	</div>
 </body>
 </html>
