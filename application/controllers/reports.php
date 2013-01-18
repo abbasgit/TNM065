@@ -10,7 +10,6 @@
       
 
       $this->load->library('form_validation');
-      $this->form_validation->set_rules('household_id', 'household_id', 'required');
       $this->form_validation->set_rules('user_id', 'user_id', 'required');
       $this->form_validation->set_rules('price', 'price', 'required');
       $this->form_validation->set_rules('product', 'product', 'required');
@@ -22,7 +21,6 @@
         {
           $data = array(
           'report_id' => $this->input->post('report_id'),
-          'household_id' => $this->input->post('household_id'),
           'user_id' => $this->input->post('user_id'),  
           'price' => $this->input->post('price'),  
           'product' => $this->input->post('product'),  

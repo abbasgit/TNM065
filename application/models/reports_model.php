@@ -14,9 +14,9 @@ class Reports_model extends CI_Model {
             return $query->result();  
         }  
 
- function insert_entry($data)
-    {            
-        $this->db->insert('REPORT', $data);
-     } 
+    function insert_entry($data)
+        {            
+            $this->db->insert('REPORT', $data);
+        } 
 }
 ?>
