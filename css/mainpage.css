@@ -1,0 +1,96 @@
+body
+{
+	background-color : #B4B4B4;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 12pt;
+	margin: 0;
+}
+
+#site_banner
+{
+	text-align: left;
+	background-color: #99d;	
+	margin: 0;
+	border-bottom: 8px solid white;
+	padding: 1.5%;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+}
+
+#site_banner h1
+{
+	margin: 0;
+}
+
+#site_banner p
+{
+	font-weight: normal;
+	font-style: italic;
+	font-family: monospace;
+	font-size: 10pt;
+	padding-left: 2em;
+}
+
+#navcontainer
+{
+	background-color: white;
+	border-bottom: 10px solid white;
+	margin: 0;
+	padding : 0;
+	text-align: left;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding-left: 1.5%; 
+	padding-right: 1.5%;
+}
+
+#navlist
+{
+	list-style-type: none;
+	margin: 0;
+	padding : 0;
+}
+
+#navlist li
+{
+	display: inline-block;
+	margin-right: 1.5em;
+}
+
+#navlist a
+{
+	text-decoration: none;
+	font-size: 14pt;
+	display: inline-block;
+	color : #555;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.3em;
+	border-radius: 3px;
+}
+
+#navlist a:hover
+{
+	color : black;
+	background-color: #aaf;
+}
+
+#navlist a:active
+{
+	color : #eee;
+}
+
+#navlist #logout
+{
+	float : right;
+	margin : 0;
+}
+
+#navlist #logout a:hover
+{
+	color: red;
+	background-color: transparent;
+}
