@@ -8,8 +8,10 @@
 		<?php echo validation_errors('<div id="validation_errors">', '</div>'); ?>
 	-->
 
+    <?php $this->load->view('site_banner'); ?>
+
     <div id="pageheader">
-      <p>Login</p>
+      <p>User login</p>
     </div>
 
     <?php

@@ -1,4 +1,4 @@
-body 
+body
 {
 	background-color : #B4B4B4;
 	text-align: center;
@@ -7,26 +7,64 @@ body
 	margin: 0;
 }
 
+#site_banner
+{
+	text-align: left;
+	background-color: #99d;	
+	margin: 0;
+	border-bottom: 8px solid white;
+	padding: 1.5%;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+}
+
+#site_banner h1
+{
+	margin: 0;
+}
+
+#site_banner p
+{
+	font-weight: normal;
+	font-style: italic;
+	font-family: monospace;
+	font-size: 10pt;
+	padding-left: 2em;
+}
+
 #pageheader
 {
 	background-color: white;
+	display: inline-block;
+	margin : auto auto;
+	border-radius: 0 0 6px 6px;
+	color: #555;
 }
 
 #pageheader p
 {
 	font-size: 18pt;
 	font-weight: bold;
+	margin : 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0.1em;
 }
 
 #loginform , #registerform
 {
 	text-align: left;
-	background-color: #f4f4fa;
+	background-color: #EBEBEB;
 	padding: 12px;
 	margin: auto auto;
 	border-radius: 5px 0px 0px 5px;
+	border-color: #eee;
+	border-width: 1px;
+	border-style: solid;
+	border-right: none;
 	margin-left : 20%;
-	margin-top : 2%;
+	margin-top : 1em;
 }
 
 label
@@ -54,16 +92,39 @@ span.validation_error
 #reglink
 {
 	text-align: right;
-	background-color: #f4f4fa;
+	background-color: #EBEBEB;
+	border-radius: 0px 5px 5px 0px;
+	border-color: #EEE;
+	border-width: 1px;
+	border-style: solid;
 	margin : auto auto;
 	margin-right: 30%;
 	margin-top: 2%;
 	padding: 12px;
 	font-size: 11pt;
-	border-radius: 0px 5px 5px 0px;
 }
 
 #reglink p
 {
 	margin : 0;
+}
+
+#success_container
+{
+	display: inline-block;
+	margin: auto auto;
+	background-color: white;
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #eee;
+	padding : 0.8em;
+	margin-top: 1em;
+}
+
+.username
+{
+	font-family: monospace;
+	font-weight: bold;
+	color : #9999DD;
 }
