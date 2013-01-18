@@ -13,10 +13,12 @@ body
 	background-color: #99d;	
 	margin: 0;
 	border-bottom: 8px solid white;
-	padding: 1.5%;
+	padding: 1.5em;
 	font-size: 20pt;
 	font-weight: bold;
 	color: white;
+	cursor: pointer;
+	padding-top : 3em;
 }
 
 #site_banner h1
@@ -42,8 +44,8 @@ body
 	text-align: left;
 	font-variant: small-caps;
 	font-weight: bold;
-	padding-left: 1.5%; 
-	padding-right: 1.5%;
+	padding-left: 1.5em; 
+	padding-right: 1.5em;
 }
 
 #navlist
@@ -70,6 +72,7 @@ body
 	padding-top: 0.5em;
 	padding-bottom: 0.3em;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 #navlist a:hover
@@ -93,4 +96,22 @@ body
 {
 	color: red;
 	background-color: transparent;
+}
+
+#main_container
+{
+	background-color: #eee;
+	border-radius: 10px;
+	border : 1px solid white;
+	display: inline-block;
+	text-align: left;
+	padding : 2em;
+	margin : 2em;
+}
+
+.username
+{
+	font-family: monospace;
+	font-weight: bold;
+	color : #9999DD;
 }

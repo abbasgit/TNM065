@@ -21,7 +21,8 @@ class Main_page extends CI_Controller {
 
 	private function _load_main_view()
 	{
-		$this->load->view('main_view');
+		$data = array('username' => $this->session->userdata('username'));
+		$this->load->view('main_view', $data);
 	}
 
 	private function _is_logged_in()
@@ -34,6 +35,11 @@ class Main_page extends CI_Controller {
 		{
 			return TRUE;
 		}
+	}
+
+	public function ajax_request()
+	{
+		print 'ajax result goes here';
 	}
 
 	public function logout()

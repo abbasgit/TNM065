@@ -1,13 +1,13 @@
 <div id="navcontainer">
 	<ul id="navlist">
 		<li>
-			<a href="#">Report</a>
+			<a id="report">Report</a>
 		</li>
 		<li>
-			<a href="#">Profile</a>
+			<a id="profile">Profile</a>
 		</li>
 		<li id="logout">
-			<a href="main_page/logout">Logout</a>
+			<a href="<?php base_url(); ?>index.php?/main_page/logout">Logout</a>
 		</li>
 	</ul>
 </div>
