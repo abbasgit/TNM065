@@ -39,7 +39,15 @@ class Main_page extends CI_Controller {
 
 	public function ajax_request()
 	{
-		print 'ajax result goes here';
+		if ( ! $this->_is_logged_in() )
+		{
+			// Do nothing?! , 	
+		}
+		else
+		{
+			print 'ajax result goes here';
+		}
+
 	}
 
 	public function logout()

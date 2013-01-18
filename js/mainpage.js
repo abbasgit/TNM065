@@ -1,3 +1,4 @@
+var BASE_URL = "http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php?/";
 $(document).ready(function ()
 {
 	setupLinks();
@@ -23,7 +24,7 @@ function setupLinks()
   		  })
 		*/
 
-		$('#main_container').load('index.php?/main_page/ajax_request', function(){
+		$('#main_container').load( BASE_URL + 'main_page/ajax_request', function(){
 			
 		});
   	});
