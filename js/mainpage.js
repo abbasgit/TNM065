@@ -22,11 +22,10 @@ function setupLinks()
 	        $('#main_container').html(data);
     	 	}
   		  })
-		*/
+		
+*/
+		$('#main_container').load( BASE_URL + 'main_page/ajax_request', {type:'test'});
 
-		$('#main_container').load( BASE_URL + 'main_page/ajax_request', function(){
-			
-		});
   	});
 
 

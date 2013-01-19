@@ -6,6 +6,9 @@ class Main_page extends CI_Controller {
 	{
 		parent::__construct();
 
+
+		// Will redirect to login if any function in this class is 
+		// called when the user is not logged in.
 		if ( ! $this->_is_logged_in() )
 		{
 			redirect('login', 'refresh');
@@ -19,7 +22,7 @@ class Main_page extends CI_Controller {
 
 	public function ajax_request()
 	{
-		print 'ajax result goes here';
+		print 'The post data says type : ' . $this->input->post('type');
 	}
 
 	public function logout()
