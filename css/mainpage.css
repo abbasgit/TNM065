@@ -131,6 +131,14 @@ label
 	display: block;
 }
 
+span.logged_in_user
+{
+	font-variant: normal;
+	font-size: 10pt;
+	font-weight: normal;
+	color : #333;
+}
+
 span.validation_error
 {
 	text-align: left;
