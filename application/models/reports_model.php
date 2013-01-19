@@ -19,4 +19,6 @@ class Reports_model extends CI_Model {
             $this->db->insert('REPORT', $data);
         } 
 }
-?>
+
+/* End of file reports_model.php */
+/* Location: ./application/models/reports_model.php */

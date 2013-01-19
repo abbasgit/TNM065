@@ -94,8 +94,8 @@ body
 
 #navlist #logout a:hover
 {
-	color: red;
-	background-color: transparent;
+	color: #eee;
+	background-color: #777;
 }
 
 #main_container

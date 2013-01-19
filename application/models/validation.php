@@ -50,4 +50,4 @@ class Validation extends CI_Model
 
 
 /* End of file validation.php */
-/* Location: ./application/controllers/validation.php */
+/* Location: ./application/models/validation.php */
