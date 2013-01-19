@@ -33,7 +33,7 @@ class Validation extends CI_Model
 	{
 		$query = $this->db->get_where('USER', array('username' => $username, 'password' => md5($password)));
 
-		if ( $query->num_rows() === 1 )
+		if ( $query->num_rows() == 1 )
 		{
 			return TRUE;
 		}

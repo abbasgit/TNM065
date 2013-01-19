@@ -14,7 +14,8 @@ function setupLinks()
 		$('#main_container').load( BASE_URL + 'reports');
   	});
 
-
-
-
+  	$('#profile').click(function()
+  	{
+  		$('#main_container').load( BASE_URL + 'edit_profile');
+  	});
 }
