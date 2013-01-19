@@ -8,8 +8,6 @@
       $data['page_title'] = "Money in the bank";
       $this->load->view('reports_view', $data);
       
-
-      $this->load->library('form_validation');
       $this->form_validation->set_rules('user_id', 'user_id', 'required');
       $this->form_validation->set_rules('price', 'price', 'required');
       $this->form_validation->set_rules('product', 'product', 'required');

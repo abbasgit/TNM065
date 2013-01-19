@@ -22,7 +22,7 @@ class Main_page extends CI_Controller {
 
 	public function ajax_request()
 	{
-		print 'The post data says type : ' . $this->input->post('type');
+		
 	}
 
 	public function logout()
