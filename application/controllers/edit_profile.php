@@ -30,7 +30,7 @@ class Edit_profile extends CI_Controller
 
 			$data = array(
 				'password' => $password
-				);
+			);
 			
 			// Get the user_id to be able to update the post in the database.
 			$this->db->select('user_id');

@@ -15,6 +15,10 @@ function setupLinks()
 		$('#main_container').load( BASE_URL + 'reports');
   	});
 
+  	$('#budget').click(function () {
+		$('#main_container').load( BASE_URL + 'budget');
+  	});
+
   	$('#profile').click(function()
   	{
   		$('#main_container').load( BASE_URL + 'edit_profile');

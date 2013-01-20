@@ -21,7 +21,7 @@ class Reports extends CI_Controller
     $this->form_validation->set_rules('category', 'category', 'required|is_natural|less_than[7]');
     $this->form_validation->set_rules('date', 'date', 'required');
 
-    if ($this->form_validation->run() === TRUE)
+    if ($this->form_validation->run() === TRUE)http://www.youtube.com/watch?v=LBlg8rvh2yk
     {
 
       $data = array(
@@ -43,11 +43,6 @@ class Reports extends CI_Controller
   
     $data['query'] = $this->reports_model->get_report_query_for_user($this->user_id);
     $this->load->view('reports_table', $data);
-  }
-
-  private function _clear_post_variables()
-  {
-     unset($_POST);
   }
 
   private function _load_user_id()

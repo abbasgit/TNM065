@@ -9,7 +9,7 @@ class Reports_model extends CI_Model {
     
     public function get_report_query_for_user($user_id)  
     {  
-        //Query the data table for every record and row  
+        // Query the data table for every record and row  
         $this->db->select('date, product, category, price');
         $this->db->from('REPORT');
         $this->db->where('user_id', $user_id);
@@ -18,7 +18,7 @@ class Reports_model extends CI_Model {
     }
 
     public function insert_entry($data)
-    {            
+    {
         $this->db->insert('REPORT', $data);
     }
 }

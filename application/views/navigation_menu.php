@@ -6,6 +6,9 @@
 		<li>
 			<a id="profile">Profile</a>
 		</li>
+		<li>
+			<a id="budget">Budget Summary</a>
+		</li>
 		<li id="logout">
 			<span class="logged_in_user">Logged in as: <?php echo $username; ?></span>
 			<a href="<?php echo base_url(); ?>index.php?/main_page/logout">Logout</a>
