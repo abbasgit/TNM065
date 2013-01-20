@@ -21,9 +21,8 @@ class Reports extends CI_Controller
     $this->form_validation->set_rules('category', 'category', 'required|is_natural|less_than[7]');
     $this->form_validation->set_rules('date', 'date', 'required');
 
-    if ($this->form_validation->run() === TRUE)http://www.youtube.com/watch?v=LBlg8rvh2yk
+    if ($this->form_validation->run() === TRUE)
     {
-
       $data = array(
       'report_id' => $this->input->post('report_id'),
       'user_id' => $this->user_id,

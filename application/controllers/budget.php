@@ -6,7 +6,7 @@ class Budget extends CI_Controller
 	{
 		parent::__construct();
 
-		$this->load->model('Reports_model', 'reports_model')
+		$this->load->model('Reports_model', 'reports_model');
 	}
 
 	public function index()
