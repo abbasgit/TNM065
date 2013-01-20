@@ -26,7 +26,7 @@ echo form_open('reports',$attributes);
 	<?php echo form_error('date', '<span class="validation_error">', '</span>'); ?>
 	
 	<br>
-	<input type="submit" value="Report cost"/>
+	<input type="submit" value="Create report"/>
 </form>
 
 <script>
@@ -46,14 +46,4 @@ echo form_open('reports',$attributes);
 
     	return false;
 	});
-</script>	
-
-<?php foreach($result as $row):?>
-<p><?=$row->report_id?></br>
-<?=$row->user_id?></br>
-<?=$row->price?></br> 
-<?=$row->product?></br> 
-<?=$row->category?></br> 
-<?=$row->date?></p>
-</br>
-<?php endforeach;?>
+</script>

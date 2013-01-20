@@ -2,6 +2,7 @@ var BASE_URL = "http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php
 $(document).ready(function ()
 {
 	setupLinks();
+
 });
 
 function setupLinks()
