@@ -148,3 +148,8 @@ span.validation_error
 	padding-right: 0.2em;
 	border-radius: 3px;
 }
+
+div.ui-datepicker 
+{
+	font-size: 62.5%;
+}

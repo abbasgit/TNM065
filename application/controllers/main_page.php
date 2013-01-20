@@ -20,11 +20,6 @@ class Main_page extends CI_Controller {
 		$this->_load_main_view();
 	}
 
-	public function ajax_request()
-	{
-		
-	}
-
 	public function logout()
 	{
 

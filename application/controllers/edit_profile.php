@@ -32,12 +32,14 @@ class Edit_profile extends CI_Controller
 				'password' => $password
 				);
 			
+			// Get the user_id to be able to update the post in the database.
 			$this->db->select('user_id');
 			$this->db->from('USER');
 			$this->db->where('username', $username);
 			
 			$user_id = $this->db->get()->row()->user_id;
 
+			// Update the user's password
 			$this->db->where('user_id', $user_id);
 			$this->db->update('USER', $data);
 			print '<p>Your password has been changed successfully!</p>';
