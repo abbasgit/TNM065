@@ -22,7 +22,7 @@
 	$data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
 	$data['stylesheet'] = 'report.xsl';
 
-	$this->load->view('xslt_test', $data);
+	$this->load->view('xslt_processor', $data);
 
 	?>
 </div>
