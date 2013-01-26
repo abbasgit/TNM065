@@ -12,5 +12,17 @@
 		echo '<p>No reports found for you</p>';
 	}
 
+	
+
+	$xmlconfig = array(
+		'root' => 'pbo',
+		'element' => 'report'
+		);
+
+	$data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
+	$data['stylesheet'] = 'report.xsl';
+
+	$this->load->view('xslt_test', $data);
+
 	?>
 </div>

@@ -12,6 +12,8 @@ class Reports extends CI_Controller
     $this->load->model('Reports_model', 'reports_model');
     $this->load->library('table');
     $this->_load_user_id();
+
+    $this->load->dbutil();
   }
     
   public function index()
