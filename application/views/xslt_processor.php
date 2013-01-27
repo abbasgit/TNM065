@@ -32,7 +32,7 @@ if (preg_match("/Symbian/", $UA) | preg_match("/Opera/", $UA) | preg_match("/Nok
 else 
 {
 	// if not a mobile phone, use a html stylesheet
-	header("Content-type:text/html");
+	// header("Content-type:text/html");
 	$xsl->load('./xsl/html/' . $stylesheet);
 }
 

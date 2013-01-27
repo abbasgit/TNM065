@@ -3,11 +3,9 @@
 
 <xsl:output method="html" indent="yes" media-type="text/html"/>
 
-
 <xsl:template match="/">
 
-
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Login View</title>
 	<link rel="stylesheet" type="text/css" href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/css/loginstyles.css" media="screen"/>

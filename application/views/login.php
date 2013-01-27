@@ -1,9 +1,19 @@
+
+<?php
+
+  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
+  $data['stylesheet'] = 'login.xsl';
+
+  $this->load->view('xslt_processor', $data);
+
+  ?>
+
 <!--
 
 <html>
 <head>
-	<title>Login View</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url("/css/loginstyles.css"); ?>" media="screen"/>
+  <title>Login View</title>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url("/css/loginstyles.css"); ?>" media="screen"/>
 </head>
 <body>
 
@@ -28,20 +38,12 @@
      
      <br>
      <input type="submit" value="Login"/>
-   	</form>
+    </form>
 
-	<div id="reglink">
-   		<p>New user? <a href="register">Register here!</a></p>
-   	</div>
+  <div id="reglink">
+      <p>New user? <a href="register">Register here!</a></p>
+    </div>
 </body>
 </html>
 
 -->
-<?php
-
-  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
-  $data['stylesheet'] = 'login.xsl';
-
-  $this->load->view('xslt_processor', $data);
-
-  ?>
