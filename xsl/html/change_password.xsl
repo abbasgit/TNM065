@@ -15,7 +15,7 @@
   <h1>Personal Budget Online</h1>
   <p>Gotta keep track of those pennies...</p>
 </div>
-  
+<div id="main_container">
 <form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/edit_profile" method="post" accept-charset="utf-8" id="edit_profile">
   
   <label for="currentpassword">Current password:</label>
@@ -30,6 +30,7 @@
   <br></br>
   <input type="submit" value="Change password"/>
 </form>
+</div>
 
 </body>
 </html>
