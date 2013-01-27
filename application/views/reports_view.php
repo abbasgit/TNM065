@@ -1,4 +1,14 @@
 <?php
+
+  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
+  $data['stylesheet'] = 'reports.xsl';
+
+  $this->load->view('xslt_processor', $data);
+
+  ?>
+<!--
+
+<?php
 $attributes = array('id' => 'reports_form');
 echo form_open('reports',$attributes); 
 ?>
@@ -46,4 +56,6 @@ echo form_open('reports',$attributes);
 
     	return false;
 	});
-</script>
+</script> 
+
+-->

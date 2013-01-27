@@ -20,9 +20,9 @@
 		);
 
 	$data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
-	$data['stylesheet'] = 'reports.xsl';
+	//$data['stylesheet'] = 'reports.xsl';
 
-	$this->load->view('xslt_processor', $data);
+	//$this->load->view('xslt_processor', $data);
 
 	?>
 </div>
