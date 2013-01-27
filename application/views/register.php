@@ -1,13 +1,20 @@
+
+<?php
+
+  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
+  $data['stylesheet'] = 'register.xsl';
+
+  $this->load->view('xslt_processor', $data);
+
+  ?>
+
+<!-- 
 <html>
 <head>
 	<title>Login View</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("/css/loginstyles.css"); ?>" media="screen"/>
 </head>
 <body>
-	<!--
-		<?php echo validation_errors('<div id="validation_errors">', '</div>'); ?>
-	-->
-
     <?php $this->load->view('site_banner'); ?>
 
     <div id="pageheader">
@@ -37,3 +44,5 @@
 
 </body>
 </html>
+
+-->
