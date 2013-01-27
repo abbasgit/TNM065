@@ -1,3 +1,9 @@
+<?php
+  $data['xmlcontent'] =  '<username>' . $username . '</username>';
+  $data['stylesheet'] = 'register_success.xsl';
+  $this->load->view('xslt_processor', $data);
+?>
+<!--
 <html>
 <head>
 	<title>Registration Success</title>
@@ -13,3 +19,4 @@
   </div>
 </body>
 </html>
+-->

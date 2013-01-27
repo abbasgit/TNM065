@@ -1,7 +1,6 @@
 
 <?php
 
-  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
   $data['stylesheet'] = 'register.xsl';
 
   $this->load->view('xslt_processor', $data);

@@ -31,7 +31,7 @@
      <label for="confpassword">Confirm password:</label>
      <input type="password" size="12" id="confpassword" name="confpassword"/>
           
-     <br>
+     <br/>
       <input type="submit" value="Register"/>
     </form>
 

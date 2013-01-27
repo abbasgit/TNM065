@@ -5,7 +5,7 @@
 
   <xsl:template match="/">
    <wml>
-     <card id="main" title="Login">
+     <card id="main" title="Register">
         <p><input name="username" title="username"/></p>
         <p><input name="password" title="password" type="password"/></p>
         <p><input name="confpassword" title="confpassword"/></p>
@@ -19,4 +19,5 @@
         </anchor></p>
       </card>
     </wml>
+  </xsl:template>
 </xsl:stylesheet>
