@@ -1,3 +1,15 @@
+
+<?php
+
+  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
+  $data['stylesheet'] = 'change_password.xsl';
+
+  $this->load->view('xslt_processor', $data);
+
+  ?>
+
+
+<!--
 <?php
   $attributes = array('id' => 'change_password_form');
   echo form_open('edit_profile', $attributes); 
@@ -32,4 +44,4 @@
 
         return false;
     });
-</script>
+</script> -->
