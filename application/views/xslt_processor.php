@@ -27,7 +27,7 @@ if (preg_match("/Symbian/", $UA) | preg_match("/Opera/", $UA) | preg_match("/Nok
 {
 	// if a mobile phone, use a wml stylesheet and set appropriate MIME type
 	header("Content-type:text/vnd.wap.wml");
-	$xsl->load('./xsl/html/' . $stylesheet);
+	$xsl->load('./xsl/wml/' . $stylesheet);
 } 
 else 
 {

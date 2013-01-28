@@ -1,15 +1,9 @@
-
-<?php
-
-  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
+<?php 
   $data['stylesheet'] = 'login.xsl';
-
   $this->load->view('xslt_processor', $data);
-
   ?>
-
 <!--
-
+  // $data['xmlcontent'] =  $this->dbutil->xml_from_result($query, $xmlconfig);
 <html>
 <head>
   <title>Login View</title>
