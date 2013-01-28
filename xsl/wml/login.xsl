@@ -4,8 +4,8 @@
   <xsl:template match="/">
    <wml>
      <card id="main" title="Login">
-        <p><input name="username" title="username"/></p>
-        <p><input name="password" title="password" type="password"/></p>
+        <p>Username:<input name="username" title="username"/></p>
+        <p>Password:<input name="password" title="password" type="password"/></p>
         <p>
           <anchor>
             <go method="post" href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/login">
@@ -14,6 +14,8 @@
             </go>
             Login 
           </anchor>
+        </p>
+        <p><anchor><go method="get" href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/register"></go>Register here</anchor>
         </p>
       </card>
     </wml>

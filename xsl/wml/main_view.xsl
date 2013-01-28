@@ -5,6 +5,7 @@
   <xsl:template match="/">
    <wml>
    	<card>
+      <p>You are logged in!</p>
 		<p> 
    			<anchor>
       			<go href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/login"/>

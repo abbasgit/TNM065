@@ -4,9 +4,9 @@
   <xsl:template match="/">
    <wml>
      <card id="main" title="Register">
-        <p><input name="username" title="username"/></p>
-        <p><input name="password" title="password" type="password"/></p>
-        <p><input name="confpassword" title="confpassword"/></p>
+        <p>Username:<input name="username" title="username"/></p>
+        <p>Password:<input name="password" title="password" type="password"/></p>
+        <p>Confirm password:<input name="confpassword" title="confpassword"/></p>
         <p><anchor>
           <go method="post" href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/register">
           <postfield name="username" value="$(username)"/>
