@@ -5,14 +5,6 @@
 
 <xsl:template match="/">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Reports View</title>
-  <link rel="stylesheet" type="text/css" href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/css/mainpage.css" media="screen"/>
-</head>
-<body>
-<br></br>
-<div id="main_container">
 <form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/reports" method="post" accept-charset="utf-8" id="reportform">
   <label for="price">Price:</label>
   <input type="text" size="12" id="price" name="price"/>
@@ -36,10 +28,25 @@
   
   <input type="submit" value="Create report"/>
 </form>
-</div>
 
-</body>
-</html>
+<script>
+  
+  $(".datepicker").datepicker({ dateFormat: 'yy-mm-dd' });
+
+  var frm = $('#reports_form');
+  frm.submit(function () {
+      $.ajax({
+          type: frm.attr('method'),
+          url: frm.attr('action'),
+          data: frm.serialize(),
+          success: function (data) {
+              $('#main_container').html(data);
+          }
+      });
+
+      return false;
+  });
+</script> 
 
 </xsl:template>
 
