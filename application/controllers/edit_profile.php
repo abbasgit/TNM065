@@ -42,7 +42,7 @@ class Edit_profile extends CI_Controller
 			// Update the user's password
 			$this->db->where('user_id', $user_id);
 			$this->db->update('USER', $data);
-			print '<p>Your password has been changed successfully!</p>';
+			$this->load->view('change_password');
 		}
 		
 	}

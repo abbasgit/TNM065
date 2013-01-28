@@ -35,7 +35,7 @@ class Reports extends CI_Controller
       );                               
 
       $this->reports_model->insert_entry($data);    
-      echo '<p>Report sent successfully!</p>';
+      $this->load->view('reports_view');
     }
     else
     {

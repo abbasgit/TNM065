@@ -7,16 +7,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Login View</title>
+  <title>Reports View</title>
   <link rel="stylesheet" type="text/css" href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/css/mainpage.css" media="screen"/>
 </head>
 <body>
-
-<div id="site_banner">
-  <h1>Personal Budget Online</h1>
-  <p>Gotta keep track of those pennies...</p>
-</div>
 <br></br>
+<div id="main_container">
 <form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/reports" method="post" accept-charset="utf-8" id="reportform">
   <label for="price">Price:</label>
   <input type="text" size="12" id="price" name="price"/>
@@ -34,13 +30,13 @@
   <option value="5">Fun</option>
   <option value="6">Other</option></select>
 
-  <label for="date">Date:</label>
+  <label for="date">Date(YYYY-MM-DD):</label>
   <input type="text" size="12" id="date" name="date" class="datepicker"/>
-
   <br></br>
   
   <input type="submit" value="Create report"/>
 </form>
+</div>
 
 </body>
 </html>

@@ -11,10 +11,7 @@
   <link rel="stylesheet" type="text/css" href="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/css/mainpage.css" media="screen"/>
 </head>
 <body>
-    <div id="site_banner">
-  <h1>Personal Budget Online</h1>
-  <p>Gotta keep track of those pennies...</p>
-</div>
+<br></br>
 <div id="main_container">
 <form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/edit_profile" method="post" accept-charset="utf-8" id="edit_profile">
   
