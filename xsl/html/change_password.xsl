@@ -6,7 +6,7 @@
 <xsl:template match="/">
 
 
-<form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/edit_profile" method="post" accept-charset="utf-8" id="edit_profile">
+<form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/edit_profile" method="post" accept-charset="utf-8" id="change_password_form">
   
   <label for="currentpassword">Current password:</label>
   <input type="password" size="12" id="currentpassword" name="currentpassword"/>

@@ -5,7 +5,7 @@
 
 <xsl:template match="/">
 
-<form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/reports" method="post" accept-charset="utf-8" id="reportform">
+<form action="http://www.student.itn.liu.se/~frelo490/tnm065/projekt/index.php/reports" method="post" accept-charset="utf-8" id="reports_form">
   <label for="price">Price:</label>
   <input type="text" size="12" id="price" name="price"/>
 
